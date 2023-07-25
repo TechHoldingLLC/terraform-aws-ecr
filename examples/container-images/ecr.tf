@@ -3,3 +3,6 @@ module "ecr" {
   name                  = "my-ecr-repo"
   available_image_count = "10"
 }
+
+provider "aws" {
+}

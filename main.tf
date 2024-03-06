@@ -1,6 +1,7 @@
 #tfsec:ignore:aws-ecr-enforce-immutable-repository tfsec:ignore:aws-ecr-repository-customer-key
 resource "aws_ecr_repository" "repository" {
-  name = var.name
+  name         = var.name
+  force_delete = var.force_delete
   image_scanning_configuration {
     scan_on_push = true
   }

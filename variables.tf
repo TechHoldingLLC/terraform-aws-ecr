@@ -4,6 +4,11 @@ variable "available_image_count" {
   default     = 10
 }
 
+variable "force_delete" {
+  type    = bool
+  default = false
+}
+
 variable "name" {
   description = "ECR name"
   type        = string
